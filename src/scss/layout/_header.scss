@@ -10,15 +10,17 @@
   padding: .5rem 1rem;
   width: 100%;
 
-  background-color: $white;
-  border-top: 1px solid darken($white, 5%);
-  box-shadow: 0 -1px 10px rgba($black, .05);
+  background-color: $c_white;
+  border-top: 1px solid darken($c_white, 5%);
+  box-shadow: 0 -1px 10px rgba($c_black, .05);
   z-index: 101;
 
   @media (min-width: 940px) {
     margin-right: 1rem;
 
-    position: static;
+    position: absolute;
+    top: 0;
+    bottom: initial;
     width: 100%;
 
     background-color: transparent;
@@ -59,8 +61,7 @@
       flex-flow: row nowrap;
       align-items: center;
 
-      color: $black;
-      font-family: $logo-font;
+      color: $c_black;
       font-weight: bold;
       text-align: center;
       text-decoration: none;

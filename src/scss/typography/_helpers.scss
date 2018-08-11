@@ -16,29 +16,10 @@
   margin-right: auto;
 }
 
-.script { font-family: $script; }
-
 .separator {
   margin-top: 1rem;
   margin-bottom: 4rem;
   height: 1px;
-  background: $xmas-gray;
+  background: $c_gray;
   border: 0;
-}
-
-.no-dots {
-  list-style: none;
-  padding: 0;
-  
-  li {
-    margin-bottom: 1rem;
-    
-    &:last-of-type { margin-bottom: 0; }
-  }
-}
-
-.big-list {
-  li {
-    font-size: 120%;
-  }
 }

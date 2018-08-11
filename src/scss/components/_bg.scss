@@ -1,26 +1,16 @@
-.bg {
-  &--pink {
-    background: $pink;
-    color: $white;
-  }
-  
-  &--purple {
-    background: $logo-purple;
-    color: $white;
-  }
-  
+.bg {  
   &--gray {
-    background: $xmas-gray;
-    color: $black;
+    background: $c_gray;
+    color: $c_black;
   }
   
-  &--gold {
-    background: $gold;
-    color: $black;
+  &--lightgreen {
+    background: $c_green_light;
+    color: $c_black;
   }
   
-  &--darkblue {
-    background: $blue-dark;
-    color: $white;
+  &--brightgreen {
+    background: $c_green_bright;
+    color: $c_black;
   }
 }

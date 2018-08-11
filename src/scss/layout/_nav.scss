@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: center;
 
-  background-color: $white;
-  box-shadow: 0 -1px 10px rgba($black, .05);
+  background-color: $c_white;
+  box-shadow: 0 -1px 10px rgba($c_black, .05);
   font-size: 110%;
   opacity: 0;
   pointer-events: none;
@@ -63,7 +63,7 @@
       padding-top: .75rem;
       padding-bottom: .75rem;
 
-      color: $black;
+      color: $c_black;
       text-decoration: none;
 
       @media (min-width: 940px) {
@@ -71,30 +71,11 @@
         display: inline;
         padding-top: 0;
         padding-bottom: 0;
-
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: -6px; left: 0;
-          height: 3px;
-          width: 0;
-
-          background-color: $pink;
-          transition: width .2s ease;
-        }
-
-        &:not(.button):hover::after {
-          width: 100%;
-        }
-
-        &:not(.button).is-active::after {
-          width: 100%;
-        }
       }
 
       &.button {
         display: none;
-        color: $white;
+        color: $c_white;
 
         @media (min-width: 940px) {
           display: inline-block;

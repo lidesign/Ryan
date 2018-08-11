@@ -8,20 +8,23 @@ button.button {
 
   display: inline-block;
 
-  background-color: $pink;
+  background-color: $c_black;
   border: 0;
   border-radius: 60px;
-  color: $white;
-  font-family: $body-font;
+  color: $c_white;
+  
+  font-family: $f_body;
   font-size: 100%;
+  letter-spacing: 3px;
   text-decoration: none;
+  text-transform: uppercase;
   
   -webkit-appearance: none !important;
 
   &--nobg {
     padding: 0;
     background-color: transparent;
-    color: $black;
+    color: $c_black;
   }
   
   &--tiny {
@@ -42,12 +45,17 @@ button.button {
   }
   
   &--gray {
-    background-color: $xmas-gray;
-    color: $black;
+    background-color: $c_gray;
+    color: $c_black;
   }
   
   &--white {
-    background-color: $white;
-    color: $black;
+    background-color: $c_white;
+    color: $c_black;
+  }
+  
+  &--green {
+    background-color: $c_green_bright;
+    color: $c_white;
   }
 }

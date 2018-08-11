@@ -11,6 +11,10 @@
     {
       "slug": "schedule-an-appointment",
       "name": "Schedule An Appointment"
+    },
+    {
+      "slug": "contact",
+      "name": "Contact"
     }
   ]
 }
