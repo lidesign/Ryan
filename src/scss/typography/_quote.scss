@@ -1,0 +1,15 @@
+blockquote,
+.quote {
+  p {
+    font-family: $f_quote;
+    font-size: 250%;
+    font-style: italic;
+  }
+  cite {
+    font-size: 112.5%;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}

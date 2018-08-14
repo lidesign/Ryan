@@ -1,11 +1,11 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   margin-top: .25rem;
   margin-bottom: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 
   font-family: $f_body;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 1.2;
   
   @media (min-width: 600px) {
@@ -16,27 +16,24 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 250%;
-  @media (min-width: 450px) { font-size: 350%; }
   
-  &.smaller {
-    font-size: 125%;
-    @media (min-width: 450px) { font-size: 200%; }
-  }
+  @media (min-width: 450px) { font-size: 375%; }
 }
 h2 {
   font-size: 175%;
-  @media (min-width: 450px) { font-size: 250%; }
+  
+  @media (min-width: 450px) { font-size: 312.5%; }
 }
 h3 {
   font-size: 150%;
-  @media (min-width: 450px) { font-size: 225%; }
+  font-weight: 400;
   
-  &.smaller {
-    font-size: 100%;
-    @media (min-width: 450px) { font-size: 150%; }
-  }
+  @media (min-width: 450px) { font-size: 250%; }
 }
-
-h1, h2, h3 {
-  text-align: center;
+h4 {
+  font-size: 115%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  
+  @media (min-width: 450px) { font-size: 187.5%; }
 }

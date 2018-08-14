@@ -68,23 +68,5 @@
     
     position: relative;
     z-index: 1;
-    
-    @media (min-width: 520px) {
-      color: $c_white;
-      
-      .mask-white & {
-        color: $c_black;
-      }
-      
-      span, h1, p { text-shadow: 0 2px 15px rgba($c_black, .1); }
-    }
-    
-    span {
-      font-family: $f_quote;
-    }
-    
-    h1 { font-weight: 700; }
-    
-    p { font-size: 125%; }
   }
 }
