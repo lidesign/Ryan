@@ -7,7 +7,7 @@
   bottom: 0;
   left: 0;
 
-  padding: .5rem 1rem;
+  padding: 1rem;
   width: 100%;
 
   background-color: $c_white;
@@ -31,15 +31,14 @@
   .header-logo {
     display: none;
     
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    
     @media (min-width: 940px) {
       display: block;
       flex: 0 0 auto;
-    }
-    
-    img {      
-      @media (min-width: 1200px) {
-        max-height: initial !important;
-      }
     }
   }
   .header-links {
