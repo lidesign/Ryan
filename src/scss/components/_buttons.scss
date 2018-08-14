@@ -4,7 +4,7 @@
 .button,
 input[type="submit"].button,
 button.button {
-  padding: .5rem 1rem;
+  padding: .75rem 2.5rem;
 
   display: inline-block;
 
@@ -19,7 +19,15 @@ button.button {
   text-decoration: none;
   text-transform: uppercase;
   
+  transition: .2s ease;
+  
   -webkit-appearance: none !important;
+  
+  @media (min-width: 940px) {
+    &:hover {
+      background-color: rgba($c_black, .8);
+    }
+  }
 
   &--nobg {
     padding: 0;
