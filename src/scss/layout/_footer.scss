@@ -1,6 +1,6 @@
 .site-footer {
-  margin-bottom: 3rem;
-  padding-bottom: 1rem;
+  margin-bottom: $sp_base * 3;
+  padding-bottom: $sp_base * 1;
 
   @media (min-width: 840px) {
     display: flex;

@@ -9,7 +9,7 @@
   
   &-item {
     flex: 1 0 100%;
-    margin-bottom: 1rem;
+    margin-bottom: $sp_base * 1;
     
     @media (min-width: 980px) {
       flex: 1;

@@ -1,10 +1,10 @@
 .button-wrap {
-  margin-bottom: 1rem;
+  margin-bottom: $sp_base * 1;
 }
 .button,
 input[type="submit"].button,
 button.button {
-  padding: .75rem 2.5rem;
+  padding: $sp_base * .75 $sp_base * 2.5;
 
   display: inline-block;
 
@@ -36,20 +36,20 @@ button.button {
   }
   
   &--tiny {
-    padding: .125rem .75rem;
+    padding: $sp_base * .125 $sp_base * .75;
     font-size: 85%;
   }
 
   &--small {
-    padding: .3rem .75rem;
+    padding: $sp_base * .3 $sp_base * .75;
   }
 
   &--large {
-    padding: 1rem 2rem;
+    padding: $sp_base * 1 $sp_base * 2;
   }
   
   &--xlarge {
-    padding: 1.25rem 3rem;
+    padding: $sp_base * 1.25 $sp_base * 3;
   }
   
   &--gray {

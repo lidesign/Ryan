@@ -14,11 +14,11 @@
     align-items: center;
     justify-content: center;
     
-    padding: 2rem 1rem;
+    padding: $sp_base * 2 $sp_base * 1;
     
-    @media (min-width: 450px) { padding: 2rem; }
-    @media (min-width: 740px) { padding: 4rem 2rem; }
-    @media (min-width: 980px) { padding: 4rem; }
+    @media (min-width: 450px) { padding: $sp_base * 2; }
+    @media (min-width: 740px) { padding: $sp_base * 4 $sp_base * 2; }
+    @media (min-width: 980px) { padding: $sp_base * 4; }
     
     p {
       max-width: 45ch;
@@ -45,8 +45,8 @@
     }
     
     p {
-      margin-top: .5rem;
-      margin-bottom: .5rem;
+      margin-top: $sp_base * .5;
+      margin-bottom: $sp_base * .5;
     }
   }
   
@@ -56,7 +56,7 @@
   
   &-right {
     h3 { font-size: 200%; }
-    a { margin-top: 2rem; }
+    a { margin-top: $sp_base * 2; }
   }
 }
 

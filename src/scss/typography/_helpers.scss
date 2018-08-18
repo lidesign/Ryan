@@ -21,8 +21,8 @@
 }
 
 .separator {
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-top: $sp_base * 1;
+  margin-bottom: $sp_base * 4;
   height: 1px;
   background: $c_gray;
   border: 0;

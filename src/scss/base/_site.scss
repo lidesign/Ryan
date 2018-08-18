@@ -2,14 +2,14 @@
   margin: 0;
 
   &-title {
-    margin-top: 2rem;
-    margin-bottom: 3.5rem;
+    margin-top: $sp_base * 2;
+    margin-bottom: $sp_base * 3.5;
     
     line-height: 1.2;
 
     @media (min-width: 450px) {
-      margin-top: 3rem;
-      margin-bottom: 5rem;
+      margin-top: $sp_base * 3;
+      margin-bottom: $sp_base * 5;
       line-height: 1;
     }
   }

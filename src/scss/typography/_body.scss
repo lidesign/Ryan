@@ -1,6 +1,6 @@
 p { 
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: $sp_base * 1;
+  margin-right: $sp_base * 1;
 
   font-size: 110%;
   
@@ -9,7 +9,7 @@ p {
   }
   
   &.lead {
-    margin-bottom: 1rem;
+    margin-bottom: $sp_base * 1;
     font-size: 160%;
     line-height: 1.3;
     

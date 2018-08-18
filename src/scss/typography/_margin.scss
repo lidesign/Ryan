@@ -1,21 +1,21 @@
 .margin {
   &-vertical {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: $sp_base * 2;
+    margin-bottom: $sp_base * 2;
     
     &--big {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
+      margin-top: $sp_base * 4;
+      margin-bottom: $sp_base * 4;
     }
   }
   &-top {
-    margin-top: 2rem;
+    margin-top: $sp_base * 2;
   }
   &-bottom {
-    margin-bottom: 2rem;
+    margin-bottom: $sp_base * 2;
     
     &--big {
-      margin-bottom: 4rem;
+      margin-bottom: $sp_base * 4;
     }
   }
 }
@@ -28,7 +28,7 @@
       margin-top: 0 !important;
       
       @media (min-width: 880px) {
-        margin-top: 3rem !important;
+        margin-top: $sp_base * 3 !important;
       }
     }
   }
@@ -39,7 +39,7 @@
       margin-bottom: 0 !important;
       
       @media (min-width: 880px) {
-        margin-bottom: 2rem !important;
+        margin-bottom: $sp_base * 2 !important;
       }
     }
   }

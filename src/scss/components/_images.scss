@@ -1,5 +1,5 @@
 .image {
-  margin-bottom: 2rem;
+  margin-bottom: $sp_base * 2;
   
   &--center {
     margin-left: auto;
@@ -27,11 +27,11 @@
   &--right {
     @media (min-width: 540px) {
       float: right;
-      margin-left: 2rem;
+      margin-left: $sp_base * 2;
     }
 
     @media (min-width: 860px) {
-      margin-left: -2rem;
+      margin-left: -$sp_base * 2;
       transform: translateX(100px);
     }
   }
@@ -39,11 +39,11 @@
   &--left {
     @media (min-width: 540px) {
       float: left;
-      margin-right: 2rem;
+      margin-right: $sp_base * 2;
     }
 
     @media (min-width: 860px) {
-      margin-right: -2rem;
+      margin-right: -$sp_base * 2;
       transform: translateX(-100px);
     }
   }

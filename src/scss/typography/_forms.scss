@@ -1,6 +1,6 @@
 .form {
   &-field {    
-    margin-bottom: 2rem;
+    margin-bottom: $sp_base * 2;
     padding: 0;
     border: 0;
     
@@ -9,19 +9,19 @@
       flex-flow: row wrap;
       align-items: center;
       
-      margin: 0 0 .5rem;
+      margin: 0 0 $sp_base * .5;
     }
     
     @media (min-width: 700px) {
-      margin: 0 .5rem .5rem;
+      margin: 0 $sp_base * .5 $sp_base * .5;
     }
     
     @media (min-width: 930px) {
-      margin: 0 -.5rem .5rem;
+      margin: 0 $sp_base * -.5 $sp_base * .5;
     }
     
     h2, h3 {      
-      margin: 0 0 1rem;
+      margin: 0 0 $sp_base * 1;
       padding: 0;
       font-size: 120%;
       flex-basis: 100%;
@@ -37,7 +37,7 @@
     }
     
     &.review-field {
-      padding: 1rem 1rem 0;
+      padding: $sp_base * 1 $sp_base * 1 0;
       margin-top: -1px;
       margin-bottom: 0;
       border: 1px solid $c_gray;
@@ -50,12 +50,12 @@
   }
   
   &-row {
-    margin: 0 0 1rem;
+    margin: 0 0 $sp_base * 1;
     flex: 1 0 100%;
     
     @media (min-width: 570px) {
-      flex: 0 0 calc(50% - 1rem);
-      margin: 0 .5rem 1rem;
+      flex: 0 0 calc(50% - $sp_base * 1);
+      margin: 0 $sp_base * .5 $sp_base * 1;
       
       &:last-child {
         flex-grow: 1;
@@ -82,7 +82,7 @@
     
     input {
       width: 100%;
-      padding: .6rem;
+      padding: $sp_base * .6;
       font-size: 100%;
     }
     

@@ -1,37 +1,37 @@
 .padding {
   
   &-all {
-    padding: 1.5rem;
+    padding: $sp_base * 1.5;
     
-    @media (min-width: 1000px) { padding: 2.5rem; }
+    @media (min-width: 1000px) { padding: $sp_base * 2.5; }
   }
   
   &-top {
-    padding-top: 1.5rem;
+    padding-top: $sp_base * 1.5;
     
-    @media (min-width: 740px) { padding-top: 3rem; }
-    @media (min-width: 1000px) { padding-top: 5rem; }
+    @media (min-width: 740px) { padding-top: $sp_base * 3; }
+    @media (min-width: 1000px) { padding-top: $sp_base * 5; }
   }
   
   &-bottom {
-    padding-bottom: 1.5rem;
+    padding-bottom: $sp_base * 1.5;
     
-    @media (min-width: 740px) { padding-bottom: 3rem; }
-    @media (min-width: 1000px) { padding-bottom: 5rem; }
+    @media (min-width: 740px) { padding-bottom: $sp_base * 3; }
+    @media (min-width: 1000px) { padding-bottom: $sp_base * 5; }
   }
   
   &-vertical {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: $sp_base * 3;
+    padding-bottom: $sp_base * 3;
     
     @media (min-width: 1000px) {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding-top: $sp_base * 5;
+      padding-bottom: $sp_base * 5;
     }
     
     &-mobile {
-      padding-top: 2rem !important;
-      padding-bottom: 2rem !important;
+      padding-top: $sp_base * 2 !important;
+      padding-bottom: $sp_base * 2 !important;
       
       @media (min-width: 740px) {
         padding-top: 0 !important;
@@ -41,12 +41,12 @@
   }
   
   &-horizontal {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: $sp_base * 1.5;
+    padding-left: $sp_base * 1.5;
     
     @media (min-width: 1000px) {
-      padding-right: 3rem;
-      padding-left: 3rem;
+      padding-right: $sp_base * 3;
+      padding-left: $sp_base * 3;
     }
   }
 }
