@@ -1,5 +1,14 @@
 .list {
   
+  &--no-dot {
+    list-style: none;
+  }
+  
+  &--no-style {
+    margin: 0;
+    padding: 0;
+  }
+  
   &--spaced {
     li {
       margin-bottom: $sp_base * 1;
