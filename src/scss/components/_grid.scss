@@ -3,6 +3,10 @@
   flex-flow: row wrap;
   justify-content: center;
   
+  &--between {
+    justify-content: space-between;
+  }
+  
   &--center-v {
     align-items: center;
   }
