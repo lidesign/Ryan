@@ -7,11 +7,11 @@ html {
   -osx-moz-font-smoothing: grayscale;
 
   font-family: $f_body;
-  font-size: 100%;
+  font-size: 110%;
   line-height: 1.5;
   
   @media (min-width: 1650px) {
-    font-size: 110%;
+    font-size: 125%;
     line-height: 1.75;
   }
 }
