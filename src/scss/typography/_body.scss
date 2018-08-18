@@ -4,6 +4,10 @@ p {
 
   font-size: 110%;
   
+  @media (min-width: 1200px) {
+    font-size: 125%;
+  }
+  
   &.lead {
     margin-bottom: 1rem;
     font-size: 160%;
