@@ -1,12 +1,5 @@
 p { 
-  margin-left: $sp_base * 1;
-  margin-right: $sp_base * 1;
-
   font-size: 110%;
-  
-  @media (min-width: 1200px) {
-    font-size: 125%;
-  }
   
   &.lead {
     margin-bottom: $sp_base * 1;
