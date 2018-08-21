@@ -69,6 +69,10 @@
     .button-schedule {
       font-size: 70%;
       
+      @media (min-width: 940px) {
+        display: none;
+      }
+      
       span {
         display: none;
         @media (min-width: 500px) { display: inline; }
