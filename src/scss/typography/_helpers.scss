@@ -1,12 +1,21 @@
 .text-center {
-  text-align: center !important;
+  text-align: center;
   
-  &-desktop {
-    @media (min-width: 800px) { text-align: center !important; }
+  &--desktop {
+    @media (min-width: 800px) { text-align: center; }
+  }
+  
+  &--mobile {
+    text-align: center;
+    @media (min-width: 800px) { text-align: left; }
   }
 }
-.text-left { text-align: left !important; }
-.text-right { text-align: right !important; }
+.text-left {
+  text-align: left;
+  
+  &--override { text-align: left !important; }
+}
+.text-right { text-align: right; }
 
 .text-white { color: $c_white; }
 
