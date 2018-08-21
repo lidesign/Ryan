@@ -29,7 +29,8 @@
   }
 }
   .header-logo {
-    font-size: 70%;
+    display: none;
+    font-size: 100%;
     font-weight: 700;
     line-height: 1;
     text-decoration: none;
@@ -38,13 +39,12 @@
     @media (min-width: 940px) {
       display: block;
       flex: 0 0 auto;
-      font-size: 100%;
     }
   }
   .header-links {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     
     flex-basis: 100%;
     
@@ -54,19 +54,18 @@
     }
   }
     .nav-logo {
-      height: 42px;
-      width: 42px;
-      
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-
       color: $c_black;
-      font-weight: bold;
-      text-align: center;
+      font-size: 70%;
+      font-weight: 700;
+      line-height: 1;
       text-decoration: none;
+      text-transform: uppercase;
       
       @media (min-width: 940px) {
         display: none;
       }
+    }
+    
+    .button-schedule {
+      font-size: 70%;
     }

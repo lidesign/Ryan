@@ -5,6 +5,12 @@
     A<span>rrows</span>
   </a>
   <div class="header-links">
+    <a class="nav-logo" href="/">
+      T<span>hree</span><br>
+      F<span>at</span><br>
+      A<span>rrows</span>
+    </a>
+    <a class="button button--small button-schedule" href="/schedule-an-appointment/">Schedule an Appointment</a>
     {% include 'partials/nav.nunjucks' %}
     <button class="mobile-menu button button--nobg  js-mobile-menu" aria-label="Mobile Menu">Menu</button>
   </div>

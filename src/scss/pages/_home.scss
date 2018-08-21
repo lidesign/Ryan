@@ -1,11 +1,9 @@
 .home {
   &-hero {
     background: url('../img/homepage-hero-bg_small.jpg') no-repeat;
-    background-size: cover;
     
     @media (min-width: 600px) {
       background: url('../img/homepage-hero-bg.jpg') no-repeat center;
-      min-height: 100vh;
     }
   }
 }
