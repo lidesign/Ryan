@@ -1,105 +1,15 @@
-.form {
-  &-field {    
-    margin-bottom: $sp_base * 2;
-    padding: 0;
-    border: 0;
-    
-    @media (min-width: 450px) {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      
-      margin: 0 0 $sp_base * .5;
-    }
-    
-    @media (min-width: 700px) {
-      margin: 0 $sp_base * .5 $sp_base * .5;
-    }
-    
-    @media (min-width: 930px) {
-      margin: 0 $sp_base * -.5 $sp_base * .5;
-    }
-    
-    h2, h3 {      
-      margin: 0 0 $sp_base * 1;
-      padding: 0;
-      font-size: 120%;
-      flex-basis: 100%;
-      
-      @media (min-width: 700px) {
-        flex-basis: 120px;
-      }
-      
-      span {
-        display: block;
-        font-size: 75%;
-      }
-    }
-    
-    &.review-field {
-      padding: $sp_base * 1 $sp_base * 1 0;
-      margin-top: -1px;
-      margin-bottom: 0;
-      border: 1px solid $c_gray;
-      
-      h3 {
-        margin-top: 0;
-        font-size: 150%;
-      }
-    }
-  }
-  
-  &-row {
-    margin: 0 0 $sp_base * 1;
-    flex: 1 0 100%;
-    
-    @media (min-width: 570px) {
-      flex: 0 0 calc(50% - $sp_base * 1);
-      margin: 0 $sp_base * .5 $sp_base * 1;
-      
-      &:last-child {
-        flex-grow: 1;
-      }
-    }
-    
-    @media (min-width: 700px) {
-      flex: 0 0 auto;
-      &:nth-child(2) {
-        flex-basis: 30%;
-      }
-      &:last-child {
-        flex-grow: 1;
-      }
-    }
+.form {  
+  &-field {
     
     label {
-      display: block;
-      
-      span {
-        font-size: 75%;
-      }
+      font-size: 85%;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
     
     input {
-      width: 100%;
-      padding: $sp_base * .6;
       font-size: 100%;
     }
-    
-    &.review-row {
-      
-      .readonly {
-        border: 0;
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
-  }
-}
-
-.register-form {
-  &.is-hidden {
-    display: none;
   }
 }
