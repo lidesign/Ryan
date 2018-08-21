@@ -2,14 +2,22 @@ blockquote,
 .quote {
   p {
     font-family: $f_quote;
-    font-size: 250%;
+    font-size: 150%;
     font-style: italic;
+    
+    @media (min-width: 650px) {
+      font-size: 250%;
+    }
   }
   cite {
-    font-size: 112.5%;
+    font-size: 85%;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
+    
+    @media (min-width: 650px) {
+      font-size: 112.5%;
+    }
   }
 }
