@@ -38,6 +38,16 @@
         padding-bottom: 0 !important;
       }
     }
+    
+    &-half {
+      padding-top: $sp_base * 1.5;
+      padding-bottom: $sp_base * 1.5;
+      
+      @media (min-width: 1000px) {
+        padding-top: $sp_base * 2.5;
+        padding-bottom: $sp_base * 2.5;
+      }
+    }
   }
   
   &-horizontal {
