@@ -1,12 +1,12 @@
-<footer class="site-footer padding-top" role="footer">
+<footer class="site-footer padding-vertical" role="footer">
   {% for link in NavItems %}
     {% if link.slug != 'schedule-an-appointment' %}
     <a class="site-footer__link{% if page_title == link.slug %} is-active{% endif %}" href="/{{ link.slug }}/">{{ link.name }}</a>
     {% endif %}
   {% endfor %}
-  <p class="site-footer__legal">
+  <p class="site-footer__legal margin-top">
     <span>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Three Fat Arrows, LLC.</span>
     <span>All Rights Reserved.</span>
-    <span><span>&nbsp; &nbsp; | &nbsp; &nbsp;</span><a href="/privacy/">Privacy Policy</a></span>
+    <span><span class="hide-on-mobile">&nbsp; &nbsp; | &nbsp; &nbsp;</span><a href="/privacy/">Privacy Policy</a></span>
   </p>
 </footer>
