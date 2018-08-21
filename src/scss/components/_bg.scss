@@ -1,4 +1,8 @@
-.bg {  
+.bg {
+  &--white {
+    background: $c_white;
+  }
+  
   &--gray {
     background: $c_gray;
     color: $c_black;
