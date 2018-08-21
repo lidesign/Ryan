@@ -8,6 +8,15 @@
       margin-bottom: $sp_base * 4;
     }
   }
+  &-horizontal {
+    margin-right: $sp_base * 2;
+    margin-left: $sp_base * 2;
+    
+    &--big {
+      margin-right: $sp_base * 4;
+      margin-left: $sp_base * 4;
+    }
+  }
   &-top {
     margin-top: $sp_base * 2;
   }
