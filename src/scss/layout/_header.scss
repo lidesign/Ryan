@@ -7,7 +7,7 @@
   bottom: 0;
   left: 0;
 
-  padding: $sp_base * 1;
+  padding: $sp_base * .8 $sp_base * 1;
   width: 100%;
 
   background-color: $c_white;
@@ -29,8 +29,7 @@
   }
 }
   .header-logo {
-    display: none;
-    
+    font-size: 70%;
     font-weight: 700;
     line-height: 1;
     text-decoration: none;
@@ -39,17 +38,19 @@
     @media (min-width: 940px) {
       display: block;
       flex: 0 0 auto;
+      font-size: 100%;
     }
   }
   .header-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     
     flex-basis: 100%;
     
     @media (min-width: 940px) {
       flex-basis: auto;
+      justify-content: space-between;
     }
   }
     .nav-logo {
