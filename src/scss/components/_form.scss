@@ -1,0 +1,16 @@
+.form {
+  &-field {
+    margin: 0 0 $sp_base * 2;
+    
+    label {
+      display: block;
+    }
+    
+    input {
+      width: 100%;
+      padding: $sp_base * .6;
+      
+      border: 1px solid $c_black;
+    }
+  }
+}
