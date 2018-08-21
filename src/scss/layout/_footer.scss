@@ -2,6 +2,10 @@
   margin-bottom: 66px;
   text-align: center;
   
+  @media (min-width: 940px) {
+    margin-bottom: 0;
+  }
+  
   &__link {
     display: block;
     margin-bottom: $sp_base * 1.5;
