@@ -1,8 +1,10 @@
 .header-nav {
   position: fixed;
-  bottom: 59px; left: 0;
-  height: calc(50vh - 59px);
+  bottom: 66px; left: 0;
+  height: auto;
   width: 100%;
+  padding-top: $sp_base * 2;
+  padding-bottom: $sp_base * 2;
 
   display: flex;
   align-items: center;
@@ -26,8 +28,9 @@
   @media (min-width: 940px) {
     display: block;
     width: auto;
-    height: auto;
     position: static;
+    padding-top: 0;
+    padding-bottom: 0;
 
     background-color: transparent;
     box-shadow: none;
