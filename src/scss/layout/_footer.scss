@@ -1,21 +1,27 @@
 .site-footer {
-  margin-bottom: $sp_base * 3;
-  padding-bottom: $sp_base * 1;
-
-  @media (min-width: 840px) {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-
-    margin-bottom: 0;
-  }
+  text-align: center;
   
   &__link {
+    display: block;
     color: $c_black;
+    
+    font-size: 85%;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    
+    @media (min-width: 800px) {
+      display: inline-block;
+      margin-right: $sp_base * 3.75;
+      
+      &:last-of-type { margin-right: 0; }
+    }
   }
 
   &__legal {
-    font-size: 100%;
+    margin-bottom: 0;
+    
+    font-size: 85%;
     text-align: center;
 
     @media (min-width: 840px) {
@@ -24,7 +30,6 @@
     }
 
     span {
-      display: block;
       
       a {
         color: inherit;
