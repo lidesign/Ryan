@@ -5,9 +5,6 @@
     A<span>rrows</span>
   </a>
   <div class="header-links">
-    <a class="nav-logo" href="/">
-      <img width="24" style="max-height: 24px" src="/img/logo.svg" alt="E logo">
-    </a>
     {% include 'partials/nav.nunjucks' %}
     <button class="mobile-menu button button--nobg  js-mobile-menu" aria-label="Mobile Menu">Menu</button>
   </div>
