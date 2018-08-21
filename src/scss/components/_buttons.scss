@@ -14,14 +14,19 @@ button.button {
   color: $c_white;
   
   font-family: $f_body;
-  font-size: 100%;
-  letter-spacing: 3px;
+  font-size: 80%;
+  letter-spacing: 1.5px;
   text-decoration: none;
   text-transform: uppercase;
   
   transition: .2s ease;
   
   -webkit-appearance: none !important;
+  
+  @media (min-width: 450px) {
+    font-size: 100%;
+    letter-spacing: 3px;
+  }
   
   @media (min-width: 940px) {
     &:hover {
