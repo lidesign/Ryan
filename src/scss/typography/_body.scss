@@ -13,7 +13,9 @@ p {
   }
   
   &.callout {
-    font-size: 150%;
+    @media (min-width: 800px) {
+      font-size: 150%;
+    }
   }
 }
 
