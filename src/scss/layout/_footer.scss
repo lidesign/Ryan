@@ -21,6 +21,7 @@
     @media (min-width: 800px) {
       display: inline-block;
       margin-right: $sp_base * 3.75;
+      margin-bottom: 0;
       font-size: 85%;
       
       &:last-of-type { margin-right: 0; }
