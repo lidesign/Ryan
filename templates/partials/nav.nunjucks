@@ -1,8 +1,10 @@
 <nav class="header-nav" role="navigation">
   <ul>
     {% for link in NavItems %}
-      {% if link.slug != 'contact' %}
-      <li><a class="{% if page_title == link.slug %}is-active{% endif %}{% if link.slug == 'schedule-an-appointment' %} button button--small{% endif %}" href="/{{ link.slug }}/">{{ link.name }}</a></li>
+      {% if link.slug == 'case-studies' %}
+      <li><a class="{% if page_title == link.slug %}is-active{% endif %}" href="/{{ link.slug }}/">{{ link.name }}</a></li>
+      {% elif link.slug == 'schedule-an-appointment' %}
+      <li><a class="{% if page_title == link.slug %}is-active{% endif %} button button--small" href="/{{ link.slug }}/">{{ link.name }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
