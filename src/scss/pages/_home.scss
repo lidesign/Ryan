@@ -4,11 +4,12 @@
     background-size: cover;
     
     @media (min-width: 600px) {
-      background: url('../img/homepage-hero-bg.jpg') no-repeat center;
+      background: url('../img/homepage-hero-bg2.jpg') no-repeat center;
     }
     
     @media (min-width: 1200px) {
       min-height: 100vh;
+      max-height: 800px;
     }
   }
 }
