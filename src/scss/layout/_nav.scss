@@ -70,9 +70,12 @@
       padding-top: $sp_base * .75;
       padding-bottom: $sp_base * .75;
 
-      color: $c_black;
       font-size: 90%;
       text-decoration: none;
+      
+      &:not(.button) {
+        color: $c_black;
+      }
 
       @media (min-width: 940px) {
         position: relative;
@@ -83,9 +86,6 @@
 
       &.button {
         display: none;
-        
-        background-color: $c_white;
-        color: $c_black;
         
         letter-spacing: 1.5px;
 
