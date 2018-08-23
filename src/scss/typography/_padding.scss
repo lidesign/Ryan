@@ -48,6 +48,16 @@
         padding-bottom: $sp_base * 2.5;
       }
     }
+    
+    &--huge {
+      padding-top: $sp_base * 2;
+      padding-bottom: $sp_base * 2;
+      
+      @media (min-width: 1000px) {
+        padding-top: $sp_base * 10;
+        padding-bottom: $sp_base * 5;
+      }
+    }
   }
   
   &-horizontal {
