@@ -1,4 +1,4 @@
-<footer class="site-footer padding-vertical" role="footer">
+<footer class="site-footer padding-vertical-half" role="footer">
   {% for link in NavItems %}
     {% if link.slug != 'schedule-an-appointment' %}
     <a class="site-footer__link{% if page_title == link.slug %} is-active{% endif %}" href="/{{ link.slug }}/">{{ link.name }}</a>
