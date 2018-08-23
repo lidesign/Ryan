@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: center;
   
+  &--left {
+    justify-content: flex-start;
+  }
+  
   @media (min-width: 520px) {  
     position: relative;
     overflow: hidden;
@@ -25,11 +29,14 @@
     position: relative;
     z-index: 1;
     
-    p {
-      color: $c_white;
-      
+    &--full {
+      max-width: initial;
+      margin-left: initial;
+      margin-right: initial;
+    }
+    
+    p {      
       line-height: 1.6;
-      text-shadow: 0 3px 25px rgba(26,65,85,.60);
     }
   }
 }
