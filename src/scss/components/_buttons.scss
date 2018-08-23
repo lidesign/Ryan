@@ -28,9 +28,7 @@ button.button {
   }
   
   @media (min-width: 940px) {
-    &:hover {
-      background-color: rgba($c_black, .8);
-    }
+    &:hover { background-color: rgba($c_black, .6); }
   }
 
   &--nobg {
@@ -59,15 +57,27 @@ button.button {
   &--gray {
     background-color: $c_gray;
     color: $c_black;
+    
+    @media (min-width: 940px) {
+      &:hover { background-color: rgba($c_gray, .6); }
+    }
   }
   
   &--white {
     background-color: $c_white;
     color: $c_black;
+    
+    @media (min-width: 940px) {
+      &:hover { background-color: rgba($c_white, .6); }
+    }
   }
   
   &--green {
     background-color: $c_green_bright;
     color: $c_white;
+    
+    @media (min-width: 940px) {
+      &:hover { background-color: rgba($c_green_bright, .6); }
+    }
   }
 }
