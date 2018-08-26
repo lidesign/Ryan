@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  
+  height: 100%;
+  
+  text-decoration: none;
+  
+  box-shadow: 0 6px 12px rgba($c_black, .05), 0 1px 3px rgba($c_black, .1);
+
+  @media (min-width: 940px) {
+    transition: box-shadow .2s ease, transform .2s ease;
+    
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 12px rgba($c_black, .05), 0 4px 8px rgba($c_black, .1);
+      transform: scale(1.02);
+    }
+    
+    &:active {
+      box-shadow: 0 1px 3px rgba($c_black, .05);
+      transform: scale(.99);
+    }
+  }
+  
+  &-title {}
+  
+  &-copy {
+    flex: 1;
+    margin-bottom: $sp_base * 2;
+  }
+  
+  &-meta {
+    display: flex;
+    flex-flow: row nowrap;
+    
+    span {
+      display: block;
+      font-size: 65%;
+    }
+    &_info {
+      margin-right: $sp_base * 4;
+      
+      &:last-of-type { margin-right: 0; }
+    }
+    &_label {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
