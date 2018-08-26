@@ -17,6 +17,10 @@
     border-width: 0 $border-width;
   }
   
+  &-all {
+    border: $border-width solid $border-color;
+  }
+  
   &-top--mobile {
     @media (max-width: 739px) {
       border: $border-width solid $border-color;
