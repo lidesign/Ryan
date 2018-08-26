@@ -1,5 +1,7 @@
 {% extends "layout.nunjucks" %}
 
+{% set page_title = "case-studies" %}
+
 {% block site_title %}A Collection of Recent Projects | {% endblock %}
 
 {% block page_class %}case-studies{% endblock %}
@@ -9,138 +11,124 @@
     <h1>Recent case studies.</h1>
   </section>
   
-  <section class="grid grid--flow casestudy padding-vertical">
-    <div class="grid-item casestudy-item">
-      <h2>Incipia</h2>
-    </div>
-    <div class="grid-item casestudy-item">
-      <h2>Jared Bracci</h2>
-    </div>
-    <div class="grid-item casestudy-item">
-      <h2>Network of International Christian Schools</h2>
-    </div>
-    <div class="grid-item casestudy-item">
-      <h2>Blue Letter Bible</h2>
-    </div>
-    <div class="grid-item casestudy-item">
-      <h2>Key Life Network</h2>
-    </div>
-    <div class="grid-item casestudy-item">
-      <h2>The Bowery Mission</h2>
-    </div>
-    <div class="grid-item casestudy-item">
-      <h2>Mission Health Concepts</h2>
-    </div>
+  <section class="grid grid--3 grid--flow casestudy padding-all bg--gray">
+    <a class="grid-item card featured bg--white padding-all--small">
+      <h3 class="card-title">Emma's Hope</h3>
+      <p class="card-copy">Running the gamut from sketching and ideation through to marketing, print, collateral, and web for the charity started by my wife and I.</p>
+      <footer class="card-meta">
+        <div class="card-meta_info">
+          <span class="card-meta_label">Client</span>
+          <span>Emma's Hope, Inc.</span>
+        </div>
+        <div class="card-meta_info">
+          <span class="card-meta_label">Type</span>
+          <span>Web, UX, Print</span>
+        </div>
+      </footer>
+    </a>
+    <a class="grid-item card bg--white padding-all--small" href="/case-studies/incipia/">
+      <h3 class="card-title">Incipia Website</h3>
+      <p class="card-copy">I partnered with the team at Incipia to create an engaging digital presence, making their startup stand out among the competition.</p>
+      <footer class="card-meta">
+        <div class="card-meta_info">
+          <span class="card-meta_label">Client</span>
+          <span>Incipia, LLC</span>
+        </div>
+        <div class="card-meta_info">
+          <span class="card-meta_label">Type</span>
+          <span>Web</span>
+        </div>
+      </footer>
+    </a>
+    <a class="grid-item card bg--white padding-all--small" href="/case-studies/jared-bracci/">
+      <h3 class="card-title">Jared Website</h3>
+      <p class="card-copy">Jared is an eclectic artist, truly a man of many talents. He needed a website that captured his personality while showcasing his music.</p>
+      <footer class="card-meta">
+        <div class="card-meta_info">
+          <span class="card-meta_label">Client</span>
+          <span>Jared Bracci</span>
+        </div>
+        <div class="card-meta_info">
+          <span class="card-meta_label">Type</span>
+          <span>Web, UI</span>
+        </div>
+      </footer>
+    </a>
+    <a class="grid-item card bg--white padding-all--small" href="/case-studies/nics/">
+      <h3 class="card-title">NICS Website</h3>
+      <p class="card-copy">The Network of International Christian Schools needed an updated website driven by user data to drive more traffic, and ultimately applicants.</p>
+      <footer class="card-meta">
+        <div class="card-meta_info">
+          <span class="card-meta_label">Client</span>
+          <span>NICS</span>
+        </div>
+        <div class="card-meta_info">
+          <span class="card-meta_label">Type</span>
+          <span>UX, Web</span>
+        </div>
+      </footer>
+    </a>
+    <a class="grid-item card bg--white padding-all--small" href="/case-studies/blue-letter-bible/">
+      <h3 class="card-title">BLB Website</h3>
+      <p class="card-copy">Blue Letter Bible required an upgraded mobile experience for their website which provies a suite of Bible study tools for millions of users.</p>
+      <footer class="card-meta">
+        <div class="card-meta_info">
+          <span class="card-meta_label">Client</span>
+          <span>Blue Letter Bible</span>
+        </div>
+        <div class="card-meta_info">
+          <span class="card-meta_label">Type</span>
+          <span>UX, UI, Web</span>
+        </div>
+      </footer>
+    </a>
+    <a class="grid-item card bg--white padding-all--small" href="/case-studies/key-life-network/">
+      <h3 class="card-title">KLN Website</h3>
+      <p class="card-copy">Key Life Network wanted to stand out among the crowd of ministry websites. They wanted a fresh website that was easy to navigate and use.</p>
+      <footer class="card-meta">
+        <div class="card-meta_info">
+          <span class="card-meta_label">Client</span>
+          <span>Key Life Network</span>
+        </div>
+        <div class="card-meta_info">
+          <span class="card-meta_label">Type</span>
+          <span>UX, UI</span>
+        </div>
+      </footer>
+    </a>
+    <a class="grid-item card bg--white padding-all--small" href="/case-studies/bowery/">
+      <h3 class="card-title">Bowery Website</h3>
+      <p class="card-copy">The Bowery Mission needed a refreshed and refocused website that would allow visitors to more easily and quickly understand who they are and drive donations.</p>
+      <footer class="card-meta">
+        <div class="card-meta_info">
+          <span class="card-meta_label">Client</span>
+          <span>The Bowery Mission</span>
+        </div>
+        <div class="card-meta_info">
+          <span class="card-meta_label">Type</span>
+          <span>UX, UI</span>
+        </div>
+      </footer>
+    </a>
+    <a class="grid-item card bg--white padding-all--small" href="/case-studies/mission-health/">
+      <h3 class="card-title">MHC Website</h3>
+      <p class="card-copy">Mission Health Concepts was in desparate need of an updated website to bring their design and navigation into the twenty-first century.</p>
+      <footer class="card-meta">
+        <div class="card-meta_info">
+          <span class="card-meta_label">Client</span>
+          <span>Mission Health Concepts</span>
+        </div>
+        <div class="card-meta_info">
+          <span class="card-meta_label">Type</span>
+          <span>Web</span>
+        </div>
+      </footer>
+    </a>
   </section>
   
-  <section class="padding-vertical padding-all text-center">
-    <blockquote class="quote">
-      <p>&ldquo;Alex is one of our favorite and most invaluable partners.&rdquo;</p>
-      <cite>Gabe Kwakyi &ndash; CEO, Incipia</cite>
-    </blockquote>
-  </section>
-  
-  <section class="padding-vertical bg--gray text-center">
-    <div class="grid grid--3">
-      <div class="grid-item padding-all">
-        <h3 class="margin-bottom">Your Success Is My Aim</h3>
-        <p>I've created websites that engage millions of customers for over 10 years and am dedicated to helping you succeed.</p>
-      </div>
-      <div class="grid-item padding-all">
-        <h3 class="margin-bottom">Understand The Need</h3>
-        <p>I teach you to understand how your customer thinks so that your website solves their problems, while being a delight to use.</p>
-      </div>
-      <div class="grid-item padding-all">
-        <h3 class="margin-bottom">Be The Champion</h3>
-        <p>Multiply your business by giving your customer the best user experience possible because they deserve it, and so do you.</p>
-      </div>
-    </div>
-    <a class="button" href="/schedule-an-appointment/">Schedule An Appointment</a>
-  </section>
-  
-  <section class="padding-vertical">
-    <div class="grid grid--2 grid--center-v">
-      <div class="grid-item padding-horizontal no-margin-bottom text-center--mobile">
-        <h2>I Care About You & Your Business</h2>
-        <p class="smallw margin-top margin-bottom">I know how frustrating it can be to invest your time making your website just right, to find out it’s not as effective as you were expecting.</p>
-        <ul class="margin-bottom--big list--spaced text-left--override list--centered-mobile">
-          <li>Over 10 years experience</li>
-          <li>Millions of engaged customers</li>
-          <li>Beautiful, fast, easy to use websites</li>
-        </ul>
-        <a class="button" href="/schedule-an-appointment/">Schedule An Appointment</a>
-      </div>
-      <div class="grid-item hide-for-mobile">
-        <img src="/img/homepage-business.jpg" alt="Man working with his hands">
-      </div>
-    </div>
-  </section>
-  
-  <section class="hero padding-vertical" style="background-image:url('/img/homepage-services-bg.jpg');">
-    <div class="grid grid--3 grid--between grid--gap-mobile text-center text-white">
-      <div class="grid-item">
-        <h4>Research</h4>
-        <ul class="list--spaced list--no-dot list--no-style margin-top">
-          <li>Interview Users</li>
-          <li>Analyze Data</li>
-          <li>Collaborate</li>
-          <li>Hypothesize</li>
-        </ul>
-      </div>
-      <div class="grid-item">
-        <h4>Build</h4>
-        <ul class="list--spaced list--no-dot list--no-style margin-top">
-          <li>Sketch</li>
-          <li>Prototype</li>
-          <li>Test Users</li>
-          <li>Validate Hypotheses</li>
-        </ul>
-      </div>
-      <div class="grid-item no-margin-bottom">
-        <h4>Refine</h4>
-        <ul class="list--spaced list--no-dot list--no-style margin-top">
-          <li>Test Users</li>
-          <li>A/B Test</li>
-          <li>Iterate</li>
-          <li>Optimize</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  
-  <section class="padding-all padding-vertical text-center--desktop">
-    <p class="callout maxw margin-bottom--big">Worried your website isn’t reaching your customers? Wish you could stop spending so much time on your website and focus on building your business? You’re not alone. You deserve to have a website that works for you. I'm here to help so you can get back to what matters.</p>
-    <a class="button" href="/schedule-an-appointment/">Schedule An Appointment</a>
-  </section>
-  
-  <section class="padding-vertical bg--lightgreen">
-    <div class="grid grid--2 padding-horizontal">
-      <div class="grid-item margin-horizontal bg--white padding-all">
-        <h2>Want to Be Your Customer's Hero?</h2>
-        <p class="margin-top margin-bottom">We’ve discovered six ways customers wished businesses would communicate with them. Adopting these six practices will help you:</p>
-        <ul class="margin-bottom list--spaced">
-          <li>Make your customers love you.</li>
-          <li>Exponentially grow customer loyalty.</li>
-          <li>Master your customer's needs.</li>
-        </ul>
-        <form class="form" method="GET" action="">
-          <div class="form-field">
-            <label for="first-name">First Name</label>
-            <input id="first-name" class="form-input" type="text">
-          </div>
-          <div class="form-field">
-            <label for="email">Email Address</label>
-            <input id="email" class="form-input" type="email">
-          </div>
-          <div class="form-field no-margin-bottom">
-            <input class="button button--green" type="submit" value="Download for Free">
-          </div>
-        </form>
-      </div>
-      <div class="grid-item padding-all">
-        <img class="has-shadow" src="/img/homepage-pdf-cover.jpg" alt="6 Ways Customers Wished Businesses Would Communicate">
-      </div>
-    </div>
+  <section class="cta bg--black padding-vertical padding-horizontal-mobile text-center">
+    <p class="mediumw mauto callout no-margin-top margin-bottom">Increasing customer loyalty and engagement starts with trust. Let’s build it together.</p>
+    <a class="button button--green" href="/schedule-an-appointment/">Schedule an Appointment</a>
   </section>
   
 {% endblock %}
