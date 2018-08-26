@@ -1,9 +1,15 @@
 .padding {
   
   &-all {
-    padding: $sp_base * 1.5;
+    padding: $sp_base * 3;
     
-    @media (min-width: 1000px) { padding: $sp_base * 2.5; }
+    @media (min-width: 1000px) { padding: $sp_base * 5; }
+    
+    &--small {
+      padding: $sp_base * 1.5;
+      
+      @media (min-width: 1000px) { padding: $sp_base * 2.5; }
+    }
   }
   
   &-top {
@@ -67,6 +73,16 @@
     @media (min-width: 1000px) {
       padding-right: $sp_base * 3;
       padding-left: $sp_base * 3;
+    }
+    
+    &-mobile {
+      padding-left: $sp_base * 2 !important;
+      padding-right: $sp_base * 2 !important;
+      
+      @media (min-width: 740px) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
     }
   }
 }
