@@ -1,20 +1,5 @@
 .cta {
 
-  &-copy {
-    padding-left: $sp_base * 2;
-    padding-right: $sp_base * 2;
-
-    @media (min-width: 540px) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  &-button {
-    margin-top: $sp_base * 1;
-    margin-bottom: $sp_base * 1;
-  }
-
   &-helper {
     a {
       color: $c_black;
