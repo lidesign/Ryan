@@ -74,7 +74,30 @@
       text-decoration: none;
       
       &:not(.button) {
+        position: relative;
         color: $c_black;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -11px; left: 50%;
+          height: 7px; width: 7px;
+          
+          background: $c_green-bright;
+          box-shadow: 0 2px 8px rgba($c_green-bright, .3);
+          border-radius: 50%;
+          
+          opacity: 0;
+          pointer-events: none;
+          transform: translateX(-50%);
+          transition: opacity .2s ease;
+        }
+        
+        &.is-active {
+          &::before {
+            opacity: 1;
+          }
+        }
       }
 
       @media (min-width: 940px) {
