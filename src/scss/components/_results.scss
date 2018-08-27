@@ -1,0 +1,26 @@
+.result {
+  &-percent {
+    margin-top: 0;
+    margin-bottom: $sp_base * 1;
+
+    font-family: Helvetica, sans-serif;
+    font-size: 350%;
+    font-weight: 100;
+    
+    span {
+      color: $c_green_bright;
+      font-size: 50%;
+    }
+  }
+  &-metric {
+    margin-top: 0;
+    margin-bottom: $sp_base * .5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &-delta {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+}
