@@ -16,11 +16,11 @@
   @supports (display: grid) {
     &--flow {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      grid-gap: $sp_base * 1;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-gap: $sp_base * 2;
       
       .grid-item.featured {
-        grid-column: 1/3;
+        //grid-column: 1/3;
       }
     }
   }
