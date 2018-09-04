@@ -1,0 +1,147 @@
+.casestudies {
+  counter-reset: case_num;
+}
+.casestudy {  
+  margin-bottom: $sp_base * 1.5;
+  position: relative;
+  
+  border-bottom: 1px solid $c_gray;
+  
+  counter-increment: case_num;
+  
+  @media (min-width: 540px) {
+    margin-bottom: $sp_base * 5;
+    border-bottom-width: 0;
+  }
+  
+  @media (min-width: 701px) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @media (min-width: 850px) {
+    margin-bottom: $sp_base * 6;
+    
+    &:nth-child(even) {
+      .casestudy-content {
+        order: 2;
+      }
+      .casestudy-image {
+        order: 1;
+      }
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    margin-bottom: $sp_base * 8;
+  }
+  
+  @media (min-width: 1400px) {
+    margin-bottom: $sp_base * 10;
+  }
+  
+  &:last-of-type { margin-bottom: 0; }
+  
+  &::before {
+    content: '0'counter(case_num);
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 1rem;
+    
+    font-family: Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: 100;
+    letter-spacing: -2px;
+    
+    @media (min-width: 540px) {
+      display: block;
+      font-size: 500%;
+      letter-spacing: -6px;
+    }
+    
+    @media (min-width: 701px) {
+      top: $sp_base * -3;
+      left: $sp_base * 1;
+      right: auto;
+    }
+    
+    @media (min-width: 850px) {
+      left: $sp_base * 1;
+      right: auto;
+      
+      font-size: 650%;
+      letter-spacing: -10px;
+    }
+    
+    @media (min-width: 1000px) {
+      font-size: 800%;
+    }
+  }
+  
+  @media (min-width: 701px) {
+    &:nth-child(even)::before {
+      left: auto;
+      right: $sp_base * 1;
+    }
+  }
+  
+  &-content {
+    max-width: 48ch;
+  }
+  
+  &-title {
+    font-size: 250%;
+    line-height: 1;
+    
+    @media (min-width: 540px) {
+      line-height: .8;
+    }
+    
+    @media (min-width: 850px) {
+      font-size: 325%;
+    }
+    
+    @media (min-width: 1000px) {
+      font-size: 400%;
+    }
+  }
+  
+  &-meta {
+    margin-bottom: $sp_base * 2;
+  }
+  
+  &-copy {
+    margin-bottom: $sp_base * 3;
+  }
+  
+  &-image {
+    display: none;
+    
+    @media (min-width: 701px) {
+      display: block;
+      height: auto;
+      max-width: 450px;
+      max-height: 350px;
+    }
+    
+    @media (min-width: 787px) {
+      max-height: 450px;
+    }
+    
+    @media (min-width: 850px) {
+      max-height: initial;
+    }
+  }
+  
+  &:nth-child(even) {
+    .casestudy-content {
+      order: 2;
+    }
+    .casestudy-image {
+      order: 1;
+    }
+  }
+}
